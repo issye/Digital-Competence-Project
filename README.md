@@ -29,10 +29,8 @@ Free delivery voucher = RM 0 delivery fee
 💰 TOTAL: RM 21.00
 
 📂 Development (Git log example)
-* Added decoration with emojis and receipt style
 * Implemented delivery fee calculation
 * Added user input (food, price, distance, voucher)
-* Initial commit with basic structure
 
 📝 How to run
 
