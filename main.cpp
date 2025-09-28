@@ -4,26 +4,19 @@
 using namespace std;
 
 int main() {
-    // Header Decoration
-    cout << "╔══════════════════════════════════════╗\n";
-    cout << "║     MALAYSIA FOOD DELIVERY CALC      ║\n";
-    cout << "╚══════════════════════════════════════╝\n\n";
-
-    // Input section
     string foodName;
     double foodPrice, distance, deliveryFee, totalCost;
     char freeDelivery;
 
-    cout << "Please enter your order details\n";
-    cout << "----------------------------------------\n";
+    cout << "=== Malaysia Food Delivery Calculator ===\n\n";
 
-    cout << "Food name: ";
+    cout << "Enter food name: ";
     getline(cin, foodName);
 
-    cout << "Food price (RM): RM ";
+    cout << "Enter food price (RM): RM ";
     cin >> foodPrice;
 
-    cout << "Distance to delivery (km): ";
+    cout << "Enter distance to delivery (km): ";
     cin >> distance;
 
     cout << "Do you have free delivery voucher? (y/n): ";
@@ -39,19 +32,13 @@ int main() {
     totalCost = foodPrice + deliveryFee;
 
     // Output section
-    cout << "\n╔══════════════════════════════════════╗\n";
-    cout << "║              ORDER SUMMARY            ║\n";
-    cout << "╚══════════════════════════════════════╝\n";
-
+    cout << "\n--- Order Summary ---\n";
     cout << left << setw(18) << "Food Item:" << foodName << endl;
     cout << left << setw(18) << "Food Price:" << "RM " << fixed << setprecision(2) << foodPrice << endl;
     cout << left << setw(18) << "Delivery Fee:" << "RM " << fixed << setprecision(2) << deliveryFee << endl;
-    cout << "----------------------------------------\n";
     cout << left << setw(18) << "TOTAL:" << "RM " << fixed << setprecision(2) << totalCost << endl;
-    cout << "----------------------------------------\n";
-    cout << "Thank you for ordering with us!\n";
-    cout << "Your food is on the way!\n";
-    cout << "----------------------------------------\n";
+    cout << "----------------------\n";
+    cout << "Thank you for ordering.\n";
 
     return 0;
 }
